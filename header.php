@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-	<title><?php if ( is_home() || is_front_page() ) {
+	<title>
+	<?php if ( is_home() || is_front_page() ) {
 			bloginfo( 'name' );
 			if( get_bloginfo( 'description' ) )
 				echo ' | ' ; bloginfo( 'description' );
@@ -26,10 +27,14 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="wrap">
-	<div id="header">
-		<div id="logo"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
-		<div id="tagline"><?php bloginfo('description'); ?></div>
-	</div>
-	<div id="top_nav">
-		<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
-	</div>
+	
+<header>
+	<div id="logo"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
+	<div id="tagline"><?php bloginfo('description'); ?></div>
+</header><!-- end header-->
+
+
+<nav id="top">
+	<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+</nav> <!-- end top nav -->
+

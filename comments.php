@@ -12,17 +12,19 @@
 
 <?php if ( have_comments() ) : ?>
 
+<article class="comment">
 	<h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
 
 	<ol id="commentlist">
 	<?php wp_list_comments('avatar_size=45'); ?>
 	</ol>
-	
+</article>
+
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below">
 			<h3 class="screen-reader-text"><?php _e( 'Comment navigation', 'blm_basic' ); ?></h3>
-			<div class="nav-previous"><?php previous_comments_link( __( '&laquo; Older Comments', 'blm_basic' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &raquo;', 'blm_basic' ) ); ?></div>
+			<section class="nav-previous"><?php previous_comments_link( __( '&laquo; Older Comments', 'blm_basic' ) ); ?></div>
+			<section class="nav-next"><?php next_comments_link( __( 'Newer Comments &raquo;', 'blm_basic' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 

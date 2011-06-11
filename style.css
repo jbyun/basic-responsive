@@ -92,7 +92,7 @@ body {
 }
 /* Header Area 
 -----------------------------------------------------------*/
-#header {
+header {
 	float:left;
 	width:960px; height:180px;
 	background:url(images/header.gif) 50% top no-repeat;
@@ -116,38 +116,38 @@ body {
 
 /* Primary Navigation
 -------------------------------------------------------------- */
-#top_nav {
+nav#top {
 	float:left;
 	width:960px;
 	background:#e5e5e5;
 }
-#top_nav .menu-header ul, div.menu ul { 
+nav#top .menu-header ul, div.menu ul { 
 	list-style: none; 
 	font-size:16px;
 	margin:0; padding:0;
 }
-#top_nav .menu-header li, div.menu li {
+nav#top .menu-header li, div.menu li {
 	float:left;
 	position: relative;
 }
-#top_nav a {
+nav#top a {
 	display:block;
 	text-decoration:none;
 	color:#000;
 	padding:10px 15px;
 }
-#top_nav ul li a:hover, 
-#top_nav ul li.current_page_item a,
-#top_nav ul li.current_page_ancestor a,
-#top_nav ul li.current-menu-ancestor a, 
-#top_nav ul li.current-menu-item a,
-#top_nav ul li.current-menu-parent a {
+nav#top ul li a:hover, 
+nav#top ul li.current_page_item a,
+nav#top ul li.current_page_ancestor a,
+nav#top ul li.current-menu-ancestor a, 
+nav#top ul li.current-menu-item a,
+nav#top ul li.current-menu-parent a {
 	color:#fff;
 	background:#000;
 }
 
 /* Drop down menu */
-#top_nav ul ul {
+nav#top ul ul {
 	display:none;
 	position:absolute;
 	top:40px; left:0;
@@ -158,19 +158,19 @@ body {
 	width: 180px;
 	z-index: 99999;
 }
-#top_nav ul ul li {
+nav#top ul ul li {
 	min-width: 180px;
 	border-bottom:1px solid #d4d4d4;	
 }
 
 /* Third Level drop down menu */
-#top_nav ul ul ul {
+nav#top ul ul ul {
 	left:100%;
 	top:0;
 }
-#top_nav ul ul a,
-#top_nav ul li.current_page_item ul li a,
-#top_nav ul li.current-menu-ancestor ul li a {
+nav#top ul ul a,
+nav#top ul li.current_page_item ul li a,
+nav#top ul li.current-menu-ancestor ul li a {
 	background:#FFF;
 	color:#000;
 	height:auto;
@@ -178,13 +178,13 @@ body {
 	padding:10px;
 	width: 160px;
 }
-#top_nav ul ul a:hover,
-#top_nav ul li.current_page_item ul li a:hover,
-#top_nav ul li.current-menu-ancestor ul li a:hover {
+nav#top ul ul a:hover,
+nav#top ul li.current_page_item ul li a:hover,
+nav#top ul li.current-menu-ancestor ul li a:hover {
 	color:#fff;
 	background:#000;
 }
-#top_nav ul li:hover ul {display:block;}
+nav#top ul li:hover ul {display:block;}
 
 
 /* Main Body Content Area 
@@ -278,23 +278,23 @@ body {
 
 /* Footer area
 ------------------------------------------------------------*/
-#footer {
+footer {
 	clear: both;
 	text-align: center;
 	width:960px;
 	border-top: 1px dotted #d4d4d4;
 	margin:0 auto 0 auto;
 }
-#footer p {	
+footer p {	
 	font-size:12px; 
 	padding:10px;
 	color:#d4d4d4;
 }
-#footer a {
+footer a {
 	text-decoration:none;
 	color:#d4d4d4;
 }
-#footer a:hover {
+footer a:hover {
 	text-decoration:underline;
 	color:#d4d4d4;
 }
