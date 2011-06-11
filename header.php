@@ -21,6 +21,12 @@
 <meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+
+<!-- Media Queries -->
+<meta name="viewport" content="width=device-width, user-scalable=no, intial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/media.css" />
+<!-- end Media Queries -->
+
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <?php wp_head(); ?>
