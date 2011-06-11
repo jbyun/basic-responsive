@@ -23,7 +23,7 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
 <!-- Media Queries -->
-<meta name="viewport" content="width=device-width, user-scalable=no, intial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<meta name="viewport" content="width=device-width, user-scalable=yes, intial-scale=1.0" />
 <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_stylesheet_directory_uri(); ?>/media.css" />
 <!-- end Media Queries -->
 

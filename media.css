@@ -22,10 +22,10 @@
 }
 
 @media only screen and (max-width: 480px) and (min-height: 0px) and (orientation:portrait)  {
-	#wrap, nav#top, footer {width:380px;}
+	#wrap, nav#top, footer {width:360px;}
 	h1 {font-size:15px;} h2, h2 a {font-size: 13px;} h3 {font-size: 11px;}
-	header {background: url('images/header-480.gif') top left; width:380px;}
-	#content {width: 350px; margin-left: 0; padding:5px;}
+	header {background: url('images/header-480.gif') top left; width:360px;}
+	#content {width: 320px; margin-left: 0;}
 	#sidebar {display:none;}
 }
 
