@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div id="main">
-	<div id="content">
+	<section id="content">
 	<?php if (have_posts()) : ?>
 	
 		<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
@@ -33,12 +33,12 @@
 	
 	<?php while (have_posts()) : the_post(); ?>
 	
-		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	    	<h2><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 		 	<?php the_content(__('Read more'));?>
 				
 			<?php get_template_part('inc/meta'); ?>
-		</div>
+		</article>
 	
 		  <?php comments_template(); ?>
 		  <?php endwhile; else: ?>
@@ -48,7 +48,7 @@
 		  <?php endif; ?>
 		  <?php get_template_part('inc/nav'); ?>
 		  
-		</div>
+		</section> <!-- end content -->
 
 <?php get_sidebar(); ?>
 </div><!-- end of main div -->
