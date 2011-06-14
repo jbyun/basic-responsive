@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <div id="main">
+	
 	<section id="content">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -10,8 +11,8 @@
 			<?php get_template_part('inc/meta'); ?>
 			
 			<nav class="post-navigation">
-				<div class="navigation-previous"><?php previous_post_link('&laquo; %link') ?></div>
-				<div class="navigation-next"><?php next_post_link('%link &raquo;') ?></div>
+				<section class="navigation-previous"><?php previous_post_link('&laquo; %link') ?></section>
+				<section class="navigation-next"><?php next_post_link('%link &raquo;') ?></section>
 			</nav>
 		</article>
 

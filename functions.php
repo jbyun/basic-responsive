@@ -38,8 +38,8 @@ function blm_register_sidebars() {
 			'id' => 'primary',
 			'name' => __( 'Primary Sidebar' ),
 			'description' => __( 'The following widgets will appear in the main sidebar div.' ),
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div>',
+			'before_widget' => '<article id="%1$s" class="widget %2$s">',
+			'after_widget' => '</article>',
 			'before_title' => '<h4>',
 			'after_title' => '</h4>'
 		)

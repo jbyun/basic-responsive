@@ -1,4 +1,4 @@
-<div id="sidebar">
+<aside id="sidebar">
 	<?php if ( is_active_sidebar( 'primary' ) ) : ?>
 
 		<?php dynamic_sidebar( 'primary' ); ?>
@@ -29,4 +29,4 @@
 		</article> <!-- end subscribe widget -->
 		
 	<?php endif; ?>
- </div>
+ </aside> <!-- end sidebar -->
