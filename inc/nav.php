@@ -1,4 +1,4 @@
-<div class="post-navigation">
-	<div class="navigation-previous"><?php next_posts_link('&laquo; Older Posts') ?></div>
-	<div class="navigation-next"><?php previous_posts_link('Newer Posts &raquo;') ?></div>
-</div>
+<nav class="post-navigation">
+	<section class="navigation-previous"><?php next_posts_link('&laquo; Older Posts') ?></section>
+	<section class="navigation-next"><?php previous_posts_link('Newer Posts &raquo;') ?></section>
+</nav>
